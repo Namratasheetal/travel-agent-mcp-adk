@@ -24,3 +24,11 @@ The architecture is:
 - `adk` CLI (Agent Development Kit) installed. 
 
 
+---
+### Actual Chatbot Interaction - demo
+
+**Hotels in a location:**
+ ![Chatbot Demo 1](https://github.com/Namratasheetal/travel-agent-mcp-adk/blob/main/images/ADK-response-by-location.png)
+
+**Luxury Hotels in a location:**
+ ![Chatbot Demo 1](https://github.com/Namratasheetal/travel-agent-mcp-adk/blob/main/images/ADK-response.png)
