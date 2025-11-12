@@ -1,0 +1,93 @@
+(.venv) divyanshunamrata@cloudshell:~/my-agents (travel-agent-478015)$ adk web 
+/home/divyanshunamrata/my-agents/.venv/lib/python3.12/site-packages/google/adk/cli/fast_api.py:130: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/home/divyanshunamrata/my-agents/.venv/lib/python3.12/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [1788]
+INFO:     Waiting for application startup.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server started                                                      |
+|                                                                             |
+| For local testing, access at http://127.0.0.1:8000.                         |
++-----------------------------------------------------------------------------+
+
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59728 - "GET /?authuser=0 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:59728 - "GET /dev-ui/assets/config/runtime-config.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /list-apps?relative_path=./ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /builder/app/hotel-agent-app?ts=1762968384532 HTTP/1.1" 200 OK
+2025-11-12 17:26:21,725 - INFO - adk_web_server.py:605 - New session created: 6214a478-b031-408e-945d-a1be645130be
+INFO:     127.0.0.1:59728 - "POST /apps/hotel-agent-app/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /apps/hotel-agent-app/users/user/sessions/6214a478-b031-408e-945d-a1be645130be HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /apps/hotel-agent-app/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /debug/trace/session/6214a478-b031-408e-945d-a1be645130be HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /apps/hotel-agent-app/eval_results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /apps/hotel-agent-app/eval_sets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /apps/hotel-agent-app/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46264 - "GET /?authuser=0 HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:46264 - "GET /dev-ui/assets/config/runtime-config.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:46264 - "GET /list-apps?relative_path=./ HTTP/1.1" 200 OK
+2025-11-12 17:26:36,443 - INFO - adk_web_server.py:605 - New session created: ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9
+INFO:     127.0.0.1:46264 - "POST /apps/hotel-agent-app/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46264 - "GET /builder/app/hotel-agent-app?ts=1762968399250 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46264 - "GET /apps/hotel-agent-app/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46264 - "GET /apps/hotel-agent-app/users/user/sessions/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46264 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46264 - "GET /apps/hotel-agent-app/eval_results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46264 - "GET /apps/hotel-agent-app/eval_sets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46264 - "GET /apps/hotel-agent-app/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51644 - "POST /run_sse HTTP/1.1" 200 OK
+2025-11-12 17:26:43,429 - INFO - envs.py:47 - Loaded .env file for hotel-agent-app at /home/divyanshunamrata/my-agents/hotel-agent-app/.env
+2025-11-12 17:26:43,430 - INFO - envs.py:47 - Loaded .env file for hotel-agent-app at /home/divyanshunamrata/my-agents/hotel-agent-app/.env
+2025-11-12 17:26:43,448 - INFO - agent_loader.py:127 - Found root_agent in hotel-agent-app.agent
+2025-11-12 17:26:43,449 - WARNING - runners.py:266 - App name mismatch detected. The runner is configured with app name "hotel-agent-app", but the root agent was loaded from "/home/divyanshunamrata/my-agents/.venv/lib/python3.12/site-packages/google/adk/agents", which implies app name "agents".
+2025-11-12 17:26:43,827 - INFO - google_llm.py:133 - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2025-11-12 17:26:45,584 - INFO - google_llm.py:186 - Response received from the model.
+INFO:     127.0.0.1:51644 - "GET /apps/hotel-agent-app/users/user/sessions/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51644 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51644 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39550 - "POST /run_sse HTTP/1.1" 200 OK
+2025-11-12 17:26:58,266 - INFO - google_llm.py:133 - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2025-11-12 17:27:00,030 - INFO - google_llm.py:186 - Response received from the model.
+2025-11-12 17:27:00,031 - WARNING - types.py:6324 - Warning: there are non-text parts in the response: ['function_call', 'thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2025-11-12 17:27:00,565 - INFO - google_llm.py:133 - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2025-11-12 17:27:02,838 - INFO - google_llm.py:186 - Response received from the model.
+2025-11-12 17:27:02,838 - WARNING - types.py:6324 - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+INFO:     127.0.0.1:39550 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39566 - "GET /apps/hotel-agent-app/users/user/sessions/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39566 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60288 - "POST /run_sse HTTP/1.1" 200 OK
+2025-11-12 17:28:42,801 - INFO - google_llm.py:133 - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2025-11-12 17:28:44,939 - INFO - google_llm.py:186 - Response received from the model.
+2025-11-12 17:28:44,939 - WARNING - types.py:6324 - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+INFO:     127.0.0.1:60288 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60290 - "GET /apps/hotel-agent-app/users/user/sessions/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60290 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60290 - "POST /run_sse HTTP/1.1" 200 OK
+2025-11-12 17:28:50,264 - INFO - google_llm.py:133 - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2025-11-12 17:28:52,366 - INFO - google_llm.py:186 - Response received from the model.
+2025-11-12 17:28:52,367 - WARNING - types.py:6324 - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+INFO:     127.0.0.1:60290 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44644 - "GET /apps/hotel-agent-app/users/user/sessions/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44644 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39120 - "POST /run_sse HTTP/1.1" 200 OK
+2025-11-12 17:28:59,334 - INFO - google_llm.py:133 - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.VERTEX_AI, stream: False
+2025-11-12 17:29:00,883 - INFO - google_llm.py:186 - Response received from the model.
+INFO:     127.0.0.1:39120 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39126 - "GET /apps/hotel-agent-app/users/user/sessions/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39126 - "GET /debug/trace/session/ce86bf2b-6ded-4eed-bbc5-63a8db84c3d9 HTTP/1.1" 200 OK
+^CINFO:     Shutting down
+INFO:     Waiting for application shutdown.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server shutting down...                                             |
++-----------------------------------------------------------------------------+
+
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1788]
+
+Aborted!
+2025-11-12 17:30:45,945 - ERROR - base_events.py:1821 - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7d005adfcb00>
